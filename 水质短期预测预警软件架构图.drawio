@@ -1,1 +1,62 @@
-<mxfile host="app.diagrams.net" modified="2020-09-22T01:35:24.310Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3775.400 QQBrowser/10.6.4209.400" version="13.3.5" etag="VsMxJ2GGdti6ifGmgDhk" type="github"><diagram id="Ji1w1TiXu6w2BGoC-dyA">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-09-22T01:53:32.518Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3775.400 QQBrowser/10.6.4209.400" etag="6qr_KQzNSffXwmK3JAm8" version="13.3.5" type="github">
+  <diagram id="Ji1w1TiXu6w2BGoC-dyA" name="第 1 页">
+    <mxGraphModel dx="1422" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-1" value="自动化数据库MySQL" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="230" width="341" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-2" value="水域自动站所有点位自动站的实时水质、水文、气象采集数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="580" width="590" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-6" value="未来3天预测预警模型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="230" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-7" value="" style="shape=flexArrow;endArrow=classic;html=1;endWidth=44;endSize=8;width=32;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="274.5" as="sourcePoint" />
+            <mxPoint x="531" y="274.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-8" value="GIS平台Arcgis" style="rounded=0;whiteSpace=wrap;html=1;direction=east;" vertex="1" parent="1">
+          <mxGeometry x="540" y="410" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-9" value="" style="shape=flexArrow;endArrow=classic;html=1;endWidth=44;endSize=8;width=32;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="531" y="455" as="sourcePoint" />
+            <mxPoint x="450" y="454.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-11" value="" style="shape=flexArrow;endArrow=classic;html=1;endWidth=44;endSize=8;width=32;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="609.5" y="340" as="sourcePoint" />
+            <mxPoint x="609.5" y="400" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-12" value="WEB展示平台" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="90" width="590" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-13" value="" style="shape=flexArrow;endArrow=classic;html=1;endWidth=44;endSize=8;width=32;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="220" as="sourcePoint" />
+            <mxPoint x="260" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4C5yff_9BfPfL5nTZTAQ-14" value="" style="shape=flexArrow;endArrow=classic;html=1;endWidth=44;endSize=8;width=32;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="570" as="sourcePoint" />
+            <mxPoint x="260" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
