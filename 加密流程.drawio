@@ -1,1 +1,86 @@
-<mxfile host="app.diagrams.net" modified="2020-12-07T03:36:04.270Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3823.400 QQBrowser/10.7.4307.400" version="13.7.5" etag="ohcezonSdUoo48tXSZKk" type="github"><diagram id="Swq6e2rKRL38IumcRg0b">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-12-07T08:18:27.249Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3823.400 QQBrowser/10.7.4307.400" etag="U__hoIoOj4lP139nJfaC" version="13.7.5" type="github">
+  <diagram id="Swq6e2rKRL38IumcRg0b" name="第 1 页">
+    <mxGraphModel dx="1523" dy="1983" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="i99NQASKLBgrFM19qsxA-14" value="服务端" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=top;align=right;verticalAlign=bottom;spacingLeft=0;" vertex="1" parent="1">
+          <mxGeometry x="595" y="-40" width="290" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-12" value="客户端" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=top;align=right;verticalAlign=bottom;spacingLeft=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="-40" width="290" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-1" target="i99NQASKLBgrFM19qsxA-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-1" value="生成随机字符作为AES秘钥" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-2" target="i99NQASKLBgrFM19qsxA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-2" value="对数据请求数据和签名数据做AES加密" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="240" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-3" target="i99NQASKLBgrFM19qsxA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-3" value="通过使用RSA对AES秘钥进行公钥加密" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="370" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-4" target="i99NQASKLBgrFM19qsxA-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-4" value="通过使用RSA对加密后的AES秘钥做私钥解密，获得秘钥原文" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="370" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-6" value="对加密后的数据做AES解密，获得请求数据原文，对比请求数据签名，防止数据篡改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="490" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-16" value="&lt;span style=&quot;font-size: 11px ; background-color: rgb(255 , 255 , 255)&quot;&gt;传输加密后的秘钥、加密后的请求数据&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="390" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-23" target="i99NQASKLBgrFM19qsxA-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="630" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-19" target="i99NQASKLBgrFM19qsxA-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-19" value="通过AES秘钥解密数据，获取响应数据原文" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="710" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-21" value="传输加密后的数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="720" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-22" target="i99NQASKLBgrFM19qsxA-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-22" value="根据业务生成响应数据，生成响应数据的签名" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="640" y="600" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-23" value="以AES秘钥对响应数据及签名一起做AES加密" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="640" y="710" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-25" value="根据公钥对响应数据做验签，防止数据被篡改" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="830" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-12" target="i99NQASKLBgrFM19qsxA-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i99NQASKLBgrFM19qsxA-28" target="i99NQASKLBgrFM19qsxA-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i99NQASKLBgrFM19qsxA-28" value="对数据请求数据生成签名数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="120" width="200" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
