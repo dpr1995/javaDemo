@@ -1,1 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2020-12-07T08:39:46.556Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3823.400 QQBrowser/10.7.4307.400" version="13.7.5" etag="125sNhbTMcuypbqYpuxV" type="github"><diagram id="hJgu_AVoyQW6g-Lz7i0s">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-12-07T08:50:15.634Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3823.400 QQBrowser/10.7.4307.400" etag="CqjGjTDT2pCDTyf6Fb0t" version="13.7.5" type="github">
+  <diagram id="hJgu_AVoyQW6g-Lz7i0s" name="第 1 页">
+    <mxGraphModel dx="1050" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u2UCrwgbtaHFO6TJSOE8-1" target="u2UCrwgbtaHFO6TJSOE8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-1" value="分配身份凭证给客户端" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="160" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="u2UCrwgbtaHFO6TJSOE8-2" target="u2UCrwgbtaHFO6TJSOE8-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-2" value="根据分配到的身份凭证生成签名串" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="u2UCrwgbtaHFO6TJSOE8-4" target="u2UCrwgbtaHFO6TJSOE8-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-4" value="核对、对比签名串合法性" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="u2UCrwgbtaHFO6TJSOE8-6" target="u2UCrwgbtaHFO6TJSOE8-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-6" value="依据响应信息生成签名数据&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%E6%A0%B8%E5%AF%B9%E3%80%81%E5%AF%B9%E6%AF%94%E7%AD%BE%E5%90%8D%E4%B8%B2%E5%90%88%E6%B3%95%E6%80%A7%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dcenter%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22560%22%20y%3D%22300%22%20width%3D%22200%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="440" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="u2UCrwgbtaHFO6TJSOE8-7" target="u2UCrwgbtaHFO6TJSOE8-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-7" value="以&amp;nbsp;身份凭证为秘钥对响应信息以及签名数据做AES加密" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="584.5" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u2UCrwgbtaHFO6TJSOE8-10" value="以身份凭证对服务端返回响应数据做AES解密，获取数据原文，再依据数据签名进行验签，以保证数据未被篡改" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="585" width="200" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
